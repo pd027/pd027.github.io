@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pravat Ranjan Dash - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">PRD</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#elab">ELab</a></li>
+                <li><a href="#lab-exp">Lab Experiments</a></li>
+                <li><a href="#real-world">Real-World Project</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#competitions">Competitions</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="about" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-image">
+                    <img src="images/profilephoto.jpg" alt="Pravat Ranjan Dash">
+                </div>
+                <div class="profile-info">
+                    <h1>Pravat Ranjan Dash</h1>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-id-card"></i>
+                            <p><strong>Register Number:</strong> RA2311030010308</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p><strong>Email:</strong> <a href="mailto:pravatdash2004@gmail.com">pravatdash2004@gmail.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p><strong>SRM Email:</strong> <a href="mailto:pd5849@srmist.edu.in">pd5849@srmist.edu.in</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p><strong>Department:</strong> Networking and Communication</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <p><strong>Year/Sem/Section:</strong> 2nd / 4th / T2</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-book"></i>
+                            <p><strong>Subject:</strong> 21CSC204J Design and Analysis of Algorithms</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <p><strong>Handled By:</strong> Dr. Jeyaselvi</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pravatdash27/" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/pdash27" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ELab Completion Status -->
+    <section id="elab" class="elab-section">
+        <div class="container">
+            <h2 class="section-title">ELab Completion Status</h2>
+            <div class="elab-gallery">
+                <div class="elab-image">
+                    <img src="images/elab1.jpg" alt="ELab Completion Status">
+                </div>
+                <div class="elab-image">
+                    <img src="images/elab2.jpg" alt="ELab Completion Status">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Experiment Completion Status -->
+    <section id="lab-exp" class="lab-section">
+        <div class="container">
+            <h2 class="section-title">Lab Experiment Completion Status</h2>
+            <div class="lab-container">
+                <img src="images/labexperiment.jpg" alt="Lab Experiment Completion Status">
+            </div>
+        </div>
+    </section>
+
+    <!-- Real World Problem / Conceptual Task -->
+    <section id="real-world" class="realworld-section">
+        <div class="container">
+            <h2 class="section-title">Real-World Problem – Nearest Parking Spot using Min Heap</h2>
+            <div class="project-description">
+                <p>
+                    This project demonstrates an efficient solution to the common problem of finding the nearest available 
+                    parking spot in a parking lot. Using a min-heap data structure, we can quickly retrieve the closest 
+                    parking spot based on distance from the entrance.
+                </p>
+            </div>
+            <div class="project-gallery">
+                <div class="project-image">
+                    <img src="images/realworld1.jpg" alt="Project Visualization">
+                </div>
+                <div class="project-image">
+                    <img src="images/realworld2.jpg" alt="Project Visualization">
+                </div>
+                <div class="project-image">
+                    <img src="images/vscode.jpg" alt="VSCode Implementation">
+                </div>
+            </div>
+            <div class="code-editor">
+                <div class="code-header">
+                    <div class="dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="filename">parking_spot.c</div>
+                </div>
+                <pre class="code-content"><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#define MAX_SIZE 100  
+typedef struct {
+    int distance;
+    int spotNumber;
+} ParkingSpot;
+typedef struct {
+    ParkingSpot spots[MAX_SIZE];
+    int size;
+} MinHeap;
+void swap(ParkingSpot *a, ParkingSpot *b) {
+    ParkingSpot temp = *a;
+    *a = *b;
+    *b = temp;
+}
+void heapifyDown(MinHeap *heap, int index) {
+    int smallest = index;
+    int left = 2 * index + 1;
+    int right = 2 * index + 2;
+    if (left < heap->size && heap->spots[left].distance < heap->spots[smallest].distance)
+        smallest = left;
+    if (right < heap->size && heap->spots[right].distance < heap->spots[smallest].distance)
+        smallest = right;
+    if (smallest != index) {
+        swap(&heap->spots[index], &heap->spots[smallest]);
+        heapifyDown(heap, smallest);
+    }
+}
+void insertSpot(MinHeap *heap, int distance, int spotNumber) {
+    if (heap->size >= MAX_SIZE) {
+        printf("Heap is full!\\n");
+        return;
+    }
+    int i = heap->size;
+    heap->spots[i].distance = distance;
+    heap->spots[i].spotNumber = spotNumber;
+    heap->size++;
+    while (i != 0 && heap->spots[(i - 1) / 2].distance > heap->spots[i].distance) {
+        swap(&heap->spots[i], &heap->spots[(i - 1) / 2]);
+        i = (i - 1) / 2;
+    }
+}
+ParkingSpot getNearestSpot(MinHeap *heap) {
+    if (heap->size == 0) {
+        printf("No available spots!\\n");
+        return (ParkingSpot){-1, -1};
+    }
+    ParkingSpot nearest = heap->spots[0];
+    heap->spots[0] = heap->spots[heap->size - 1];
+    heap->size--;
+    heapifyDown(heap, 0);
+    return nearest;
+}
+int main() {
+    MinHeap parkingLot = {.size = 0};
+    insertSpot(&parkingLot, 5, 101);
+    insertSpot(&parkingLot, 2, 102);
+    insertSpot(&parkingLot, 8, 103);
+    insertSpot(&parkingLot, 3, 104);
+    printf("Nearest available spot: Spot %d at distance %d\\n", 
+        getNearestSpot(&parkingLot).spotNumber, 
+        getNearestSpot(&parkingLot).distance);
+    return 0;
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="certification-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-container">
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="images/scalar.jpg" alt="Scalar Certification">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Data Structures & Algorithms</h3>
+                        <p>Scalar Academy</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="images/simplilearn.jpg" alt="Simplilearn Certification">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Advanced Algorithms</h3>
+                        <p>Simplilearn</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-img">
+                        <img src="images/udemy.jpg" alt="Udemy Certification">
+                    </div>
+                    <div class="cert-info">
+                        <h3>Problem Solving Masterclass</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coding Competitions -->
+    <section id="competitions" class="competition-section">
+        <div class="container">
+            <h2 class="section-title">Coding Competitions</h2>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <div class="platform-logo">
+                        <img src="images/codeforces.jpg" alt="Codeforces">
+                    </div>
+                    <div class="platform-info">
+                        <h3>Codeforces</h3>
+                        <p>Specialist | Solved 50+ Problems</p>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-logo">
+                        <i class="fas fa-code platform-icon"></i>
+                    </div>
+                    <div class="platform-info">
+                        <h3>LeetCode</h3>
+                        <p>Solved 75+ Problems | Top 15% rank</p>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-logo">
+                        <i class="fas fa-laptop-code platform-icon"></i>
+                    </div>
+                    <div class="platform-info">
+                        <h3>HackerRank</h3>
+                        <p>5★ in Problem Solving | Gold Badge</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="codeforces-summary">
+                <h3>Codeforces Problem Solving Summary</h3>
+                <p>
+                    The problems solved on Codeforces involved straightforward implementations with strings, 
+                    arithmetic logic, and simulations. Many required input reading, logic checks (like counting 
+                    specific digits), rearranging characters, or filtering outputs. Most solutions focused on 
+                    mapping inputs to expected patterns using loops and conditionals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="mailto:pravatdash2004@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/pravatdash27/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/pdash27" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>Made by Pravat Ranjan Dash &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        document.querySelector('.burger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.burger').classList.toggle('toggle');
+        });
+
+        // Scroll reveal animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('appear');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
