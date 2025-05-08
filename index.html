@@ -3,327 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pravat Ranjan Dash - Portfolio</title>
+    <title>Pravat Dash - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <header>
         <div class="container">
-            <div class="logo">PRD</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#elab">ELab</a></li>
-                <li><a href="#lab-exp">Lab Experiments</a></li>
-                <li><a href="#real-world">Real-World Project</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#competitions">Competitions</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <div class="logo">PD</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="toggle-ball"></div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Header Section -->
-    <header id="about" class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="profile-image">
-                    <img src="images/profilephoto.jpg" alt="Pravat Ranjan Dash">
-                </div>
-                <div class="profile-info">
-                    <h1>Pravat Ranjan Dash</h1>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <i class="fas fa-id-card"></i>
-                            <p><strong>Register Number:</strong> RA2311030010308</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <p><strong>Email:</strong> <a href="mailto:pravatdash2004@gmail.com">pravatdash2004@gmail.com</a></p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <p><strong>SRM Email:</strong> <a href="mailto:pd5849@srmist.edu.in">pd5849@srmist.edu.in</a></p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <p><strong>Department:</strong> Networking and Communication</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-calendar"></i>
-                            <p><strong>Year/Sem/Section:</strong> 2nd / 4th / T2</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-book"></i>
-                            <p><strong>Subject:</strong> 21CSC204J Design and Analysis of Algorithms</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                            <p><strong>Handled By:</strong> Dr. Jeyaselvi</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/pravatdash27/" target="_blank" class="social-btn">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/pdash27" target="_blank" class="social-btn">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
             </div>
         </div>
     </header>
 
-    <!-- ELab Completion Status -->
-    <section id="elab" class="elab-section">
+    <section id="home" class="hero">
         <div class="container">
-            <h2 class="section-title">ELab Completion Status</h2>
-            <div class="elab-gallery">
-                <div class="elab-image">
-                    <img src="images/elab1.jpg" alt="ELab Completion Status">
+            <div class="hero-content">
+                <h1 class="reveal-text">Pravat Dash</h1>
+                <h2 class="reveal-text">Web & Software Development Enthusiast | CSE (Cybersecurity) Undergraduate</h2>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">Explore Portfolio</a>
+                    <a href="resume.pdf" class="btn secondary-btn" target="_blank">View Resume</a>
                 </div>
-                <div class="elab-image">
-                    <img src="images/elab2.jpg" alt="ELab Completion Status">
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="profilephoto.jpg" alt="Pravat Dash" class="profile-photo">
                 </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </section>
 
-    <!-- Lab Experiment Completion Status -->
-    <section id="lab-exp" class="lab-section">
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Lab Experiment Completion Status</h2>
-            <div class="lab-container">
-                <img src="images/labexperiment.jpg" alt="Lab Experiment Completion Status">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content glass-card">
+                <p class="quote">"Hey there 👋 I'm Pravat — currently decoding the digital world as a CSE (Cybersecurity) undergrad at SRM University. I love building things that work, look cool, and make sense (in that order). From Java GUIs to full-stack prototypes and cybersecurity curiosities, I'm all about turning caffeine and curiosity into code."</p>
             </div>
         </div>
     </section>
 
-    <!-- Real World Problem / Conceptual Task -->
-    <section id="real-world" class="realworld-section">
+    <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Real-World Problem – Nearest Parking Spot using Min Heap</h2>
-            <div class="project-description">
-                <p>
-                    This project demonstrates an efficient solution to the common problem of finding the nearest available 
-                    parking spot in a parking lot. Using a min-heap data structure, we can quickly retrieve the closest 
-                    parking spot based on distance from the entrance.
-                </p>
-            </div>
-            <div class="project-gallery">
-                <div class="project-image">
-                    <img src="images/realworld1.jpg" alt="Project Visualization">
-                </div>
-                <div class="project-image">
-                    <img src="images/realworld2.jpg" alt="Project Visualization">
-                </div>
-                <div class="project-image">
-                    <img src="images/vscode.jpg" alt="VSCode Implementation">
-                </div>
-            </div>
-            <div class="code-editor">
-                <div class="code-header">
-                    <div class="dots">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
                     </div>
-                    <div class="filename">parking_spot.c</div>
+                    <h3>Programming</h3>
+                    <p>C, C++, Java, Basic Python</p>
                 </div>
-                <pre class="code-content"><code>#include &lt;stdio.h&gt;
-#include &lt;stdlib.h&gt;
-#define MAX_SIZE 100  
-typedef struct {
-    int distance;
-    int spotNumber;
-} ParkingSpot;
-typedef struct {
-    ParkingSpot spots[MAX_SIZE];
-    int size;
-} MinHeap;
-void swap(ParkingSpot *a, ParkingSpot *b) {
-    ParkingSpot temp = *a;
-    *a = *b;
-    *b = temp;
-}
-void heapifyDown(MinHeap *heap, int index) {
-    int smallest = index;
-    int left = 2 * index + 1;
-    int right = 2 * index + 2;
-    if (left < heap->size && heap->spots[left].distance < heap->spots[smallest].distance)
-        smallest = left;
-    if (right < heap->size && heap->spots[right].distance < heap->spots[smallest].distance)
-        smallest = right;
-    if (smallest != index) {
-        swap(&heap->spots[index], &heap->spots[smallest]);
-        heapifyDown(heap, smallest);
-    }
-}
-void insertSpot(MinHeap *heap, int distance, int spotNumber) {
-    if (heap->size >= MAX_SIZE) {
-        printf("Heap is full!\\n");
-        return;
-    }
-    int i = heap->size;
-    heap->spots[i].distance = distance;
-    heap->spots[i].spotNumber = spotNumber;
-    heap->size++;
-    while (i != 0 && heap->spots[(i - 1) / 2].distance > heap->spots[i].distance) {
-        swap(&heap->spots[i], &heap->spots[(i - 1) / 2]);
-        i = (i - 1) / 2;
-    }
-}
-ParkingSpot getNearestSpot(MinHeap *heap) {
-    if (heap->size == 0) {
-        printf("No available spots!\\n");
-        return (ParkingSpot){-1, -1};
-    }
-    ParkingSpot nearest = heap->spots[0];
-    heap->spots[0] = heap->spots[heap->size - 1];
-    heap->size--;
-    heapifyDown(heap, 0);
-    return nearest;
-}
-int main() {
-    MinHeap parkingLot = {.size = 0};
-    insertSpot(&parkingLot, 5, 101);
-    insertSpot(&parkingLot, 2, 102);
-    insertSpot(&parkingLot, 8, 103);
-    insertSpot(&parkingLot, 3, 104);
-    printf("Nearest available spot: Spot %d at distance %d\\n", 
-        getNearestSpot(&parkingLot).spotNumber, 
-        getNearestSpot(&parkingLot).distance);
-    return 0;
-}</code></pre>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Dev</h3>
+                    <p>HTML, CSS, JavaScript, Tailwind</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools</h3>
+                    <p>Git, VS Code</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>OS</h3>
+                    <p>Windows, macOS, Linux (Basic)</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Finance</h3>
+                    <p>Stock Trading, Long-Term Investment Analysis</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Certifications -->
-    <section id="certifications" class="certification-section">
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <h3>AI-Based Password Analyzer</h3>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>ML</span>
+                    </div>
+                    <p>An intelligent tool that analyzes password strength using machine learning algorithms, providing detailed security insights and recommendations.</p>
+                    <a href="https://github.com/pd027/AI-PasswordAnalyzer" target="_blank" class="github-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="project-card glass-card">
+                    <h3>Campus Marketplace</h3>
+                    <div class="tech-stack">
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Python</span>
+                    </div>
+                    <p>A digital marketplace platform designed specifically for campus communities to buy, sell, and exchange items and services.</p>
+                    <a href="https://github.com/pd027/campus-marketplace" target="_blank" class="github-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="project-card glass-card">
+                    <h3>House Rental System</h3>
+                    <div class="tech-stack">
+                        <span>Java (Swing)</span>
+                        <span>MySQL</span>
+                    </div>
+                    <p>A desktop application that streamlines the process of listing, searching, and managing rental properties with an intuitive GUI.</p>
+                    <a href="#" class="github-btn">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-card glass-card">
+                    <h3>SRM Institute of Science and Technology</h3>
+                    <p class="degree">B.Tech in CSE (Cybersecurity)</p>
+                    <p class="duration">2023–2027</p>
+                    <p class="grades">CGPA: 8.75 (Till 3rd Sem)</p>
+                </div>
+                <div class="education-card glass-card">
+                    <h3>CHSE Odisha</h3>
+                    <p class="degree">12th (PCM + IT)</p>
+                    <p class="duration">2022</p>
+                    <p class="grades">81.5%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
         <div class="container">
             <h2 class="section-title">Certifications</h2>
-            <div class="cert-container">
-                <div class="cert-card">
-                    <div class="cert-img">
-                        <img src="images/scalar.jpg" alt="Scalar Certification">
-                    </div>
-                    <div class="cert-info">
-                        <h3>Data Structures & Algorithms</h3>
-                        <p>Scalar Academy</p>
-                    </div>
+            <div class="certifications-timeline">
+                <div class="certification-card glass-card">
+                    <h3>Introduction to SQL</h3>
+                    <p class="issuer">Simplilearn</p>
+                    <p class="year">2025</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-img">
-                        <img src="images/simplilearn.jpg" alt="Simplilearn Certification">
-                    </div>
-                    <div class="cert-info">
-                        <h3>Advanced Algorithms</h3>
-                        <p>Simplilearn</p>
-                    </div>
+                <div class="certification-card glass-card">
+                    <h3>Java Programming</h3>
+                    <p class="issuer">NPTEL</p>
+                    <p class="year">2024</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-img">
-                        <img src="images/udemy.jpg" alt="Udemy Certification">
-                    </div>
-                    <div class="cert-info">
-                        <h3>Problem Solving Masterclass</h3>
-                        <p>Udemy</p>
-                    </div>
+                <div class="certification-card glass-card">
+                    <h3>C++ Course</h3>
+                    <p class="issuer">Udemy</p>
+                    <p class="year">2024</p>
+                </div>
+                <div class="certification-card glass-card">
+                    <h3>SQL for Beginners</h3>
+                    <p class="issuer">Scaler Topics</p>
+                    <p class="year">2025</p>
+                </div>
+                <div class="certification-card glass-card">
+                    <h3>HTML/CSS/JS for Web Developers</h3>
+                    <p class="issuer">Coursera</p>
+                    <p class="year">2025</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Coding Competitions -->
-    <section id="competitions" class="competition-section">
+    <section id="resume" class="resume">
         <div class="container">
-            <h2 class="section-title">Coding Competitions</h2>
-            <div class="platform-grid">
-                <div class="platform-card">
-                    <div class="platform-logo">
-                        <img src="images/codeforces.jpg" alt="Codeforces">
-                    </div>
-                    <div class="platform-info">
-                        <h3>Codeforces</h3>
-                        <p>Specialist | Solved 50+ Problems</p>
-                    </div>
-                </div>
-                <div class="platform-card">
-                    <div class="platform-logo">
-                        <i class="fas fa-code platform-icon"></i>
-                    </div>
-                    <div class="platform-info">
-                        <h3>LeetCode</h3>
-                        <p>Solved 75+ Problems | Top 15% rank</p>
-                    </div>
-                </div>
-                <div class="platform-card">
-                    <div class="platform-logo">
-                        <i class="fas fa-laptop-code platform-icon"></i>
-                    </div>
-                    <div class="platform-info">
-                        <h3>HackerRank</h3>
-                        <p>5★ in Problem Solving | Gold Badge</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="codeforces-summary">
-                <h3>Codeforces Problem Solving Summary</h3>
-                <p>
-                    The problems solved on Codeforces involved straightforward implementations with strings, 
-                    arithmetic logic, and simulations. Many required input reading, logic checks (like counting 
-                    specific digits), rearranging characters, or filtering outputs. Most solutions focused on 
-                    mapping inputs to expected patterns using loops and conditionals.
-                </p>
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <a href="resume.pdf" class="btn primary-btn" target="_blank">
+                    <i class="fas fa-file-alt"></i> Download Resume
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="social-links">
-                <a href="mailto:pravatdash2004@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/pravatdash27/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/pdash27" target="_blank"><i class="fab fa-github"></i></a>
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content glass-card">
+                <div class="contact-links">
+                    <a href="mailto:pravatdash2004@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>pravatdash2004@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/pravatdash27" target="_blank" class="contact-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/pravatdash27</span>
+                    </a>
+                    <a href="https://github.com/pdash27" target="_blank" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/pdash27</span>
+                    </a>
+                </div>
             </div>
-            <p>Made by Pravat Ranjan Dash &copy; 2025</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Pravat Dash. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Mobile navigation toggle
-        document.querySelector('.burger').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('nav-active');
-            document.querySelector('.burger').classList.toggle('toggle');
+        // Theme toggle functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
         });
-
-        // Scroll reveal animation
-        document.addEventListener('DOMContentLoaded', () => {
-            const sections = document.querySelectorAll('section');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('appear');
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            sections.forEach(section => {
-                observer.observe(section);
+        
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    nav.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
             });
+        });
+        
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('section, .skill-card, .project-card, .education-card, .certification-card').forEach(element => {
+            observer.observe(element);
         });
     </script>
 </body>
